@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object 2</title>
+</head>
+<body>
+    <!--bug program -->
+    <h>use function in object</h>
+    <h2 id="demo"></h2>
+        <script>
+            const course = {
+                frontend:"html,js,css",
+                backend:"php,sql,",
+                fullstack: function data(){
+                    return this.frontend +"<br>" + this.backend;
+                }
+            };
+        let x = data();
+            document.getElementById('demo').innerHTML = x; 
+            
+        </script>
+    
+</body>
+</html>
