@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array length</title>
+</head>
+<body>
+    <h1>1)Array length property returns the length of array</h1>
+    <h2 id="demo"></h2>
+
+    <h1>2)Array toString property convert array in string</h1>
+    <h2 id="demo1"></h2>
+
+    <h1>3)Array join property seprate the array element</h1>
+    <h2 id="demo2"></h2>
+
+    <h1>4)Array pop property remove the last element of an array</h1>
+    <h2 id="demo3"></h2>
+    <h1>5)Array push property insert new element in array</h1>
+    <h2 id="demo4"></h2>
+    <h2 id="demo5"></h2>
+    <script>
+        const name = ["Pravin", "Umesh", "Panduran", "Pranav"];
+        let size = name.length;
+        document.getElementById("demo").innerHTML = size; //result in demo ----length()
+        document.getElementById("demo1").innerHTML = name.toString();  //result in demo1 -- tostring()
+        document.getElementById("demo2").innerHTML = name.join("**");  //result in demo2 ---join()
+        document.getElementById("demo3").innerHTML = name.pop();       //last element of the array is remove --pop() *shift()--works opposite
+        document.getElementById("demo4").innerHTML = name.push("Pranav"); //pranav is added in array ---push()   *unshift()
+        document.getElementById("demo5").innerHTML = name;      //new array 
+
+        
+    </script>
+</body>
+</html>
