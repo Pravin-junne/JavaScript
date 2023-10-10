@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desending sorting on an array</title>
+</head>
+<body>
+    <h1>Sort an array in Descending Order:</h1>
+    <p>array....</p>
+    <h2 id="demo"></h2>
+    <p>sorted array</p>
+    <h3 id="demo1"></h3>
+    <script>
+        const gogli = [10, 20, 30, 40, 50];
+        document.getElementById("demo").innerHTML = gogli;
+        gogli.sort(function(a, b){return b - a});
+        document.getElementById("demo1").innerHTML = gogli;
+    </script>
+    
+</body>
+</html>
