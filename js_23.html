@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array sort</title>
+</head>
+<body>
+    <h1>Array sort method</h1>
+    <p>Array</p>
+    <h2 id="demo"></h2>
+    <br>
+    <p>ascending sorted array</p>
+    <h3 id="demo1"></h3>
+    <br>
+    <p>Reverse array</p>
+    <h3 id="demo2"></h3>
+    <script>
+        const name = ["Boll", "Apple", "Camera"];
+        document.getElementById("demo").innerHTML = name;
+        name.sort();        //use to sort array alphabetically----sort()-----
+        document.getElementById("demo1").innerHTML = name;
+        name.reverse();     //use to reverse the array----- reverse()-------
+        document.getElementById("demo2").innerHTML = name;
+    </script>
+</body>
+</html>
